@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="signInback"><form action="/signIn" method="POST" id="form">
+  <h2>Login</h2>
+
+  <label for="email">Email-address</label>
+  <input type="text" name="email">
+
+  <label for="password">Password</label>
+  <input type="password" name="password">
+
+  {{#if errorMessage }}
+    <div class="error-message">{{ errorMessage }}</div>
+  {{/if}}
+
+  <button>Sign in</button>
+
+  <p class="account-message">
+    Don't have an account? <a href="/registration">Sign up</a>
+  </p>
+</form>
+</div>
+</div>
+       

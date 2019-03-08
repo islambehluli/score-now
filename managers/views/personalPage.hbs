@@ -1,0 +1,25 @@
+<div class="content">
+    <div class="box">
+        <p class="title">PERSONAL INFO</p>
+            <h1 class="title2">YOUR FAVOURITE TEAM IS: </h1>
+            <p>{{team}}</p>
+        
+
+        <h1 class="title2">YOUR USERNAME IS: </h1>
+        <p>{{userName}}</p>
+        <h1 class="title2">YOUR EMAIL IS: </h1>
+        <p>{{userEmail}}</p>
+
+        <h1 class="title2">PEOPLE WITH SAME INTEREST: </h1>
+        {{#each friends}}
+            {{name}}
+        {{/each}}
+    
+        <h1 class="title2">WRITE A POST TO GO TO OUR FORUM: </h1>
+        <form action="/createMessage" method="POST">
+            <input type="text" name="post" placeholder="Type here...">
+            <button type="submit" >Post</button>
+        </form>
+        {{friends.name}}
+</div>
+</div>

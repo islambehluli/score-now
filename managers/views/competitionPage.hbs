@@ -1,0 +1,30 @@
+<p class="title">{{title}}</p>
+<div class="parent">
+    <div class="standings">
+        <p class="title2">{{tableTile}}</p>
+        {{#each tables}}
+            <ol>
+                <li class="table"><span><span class="position space1">{{position}}</span><span class="spaces">{{team.name}}</span></span><span class="gameDay"><span>{{playedGames}}</span><span>{{points}}</span></span></li><hr>
+            </ol>
+        {{/each}}
+    </div>
+    <div class="topScorers">
+            <p class="title2">{{topScorers}}</p>
+        {{#each scorers}}
+            <ol>
+                <li class="goals"><span>{{player.name}}</span> <span>{{numberOfGoals}}</span></li><hr>
+                
+            </ol>
+    {{/each}}
+    </div>
+
+<div class="nextMatches">
+<h1 class="title2">Next Matches</h1>
+    {{#each matches}}
+        <div class="matches">
+            <p>{{homeTeam.name}} vs {{awayTeam.name}}</p><hr>
+        </div>
+    
+    {{/each}}
+</div>
+</div>

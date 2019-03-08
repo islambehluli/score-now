@@ -1,0 +1,26 @@
+<div class="content">
+<form action="/registration" method="POST">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+ 
+    <label for="name" ><b>Name</b></label>
+    <input type="text" id="password"placeholder="Enter Password" name="name" >
+
+    <label for="email"><b>Email</b></label>
+    <input id="email" type="text" placeholder="Enter Email" name="email">
+
+    <label for="password" ><b>Password</b></label>
+    <input type="password" id="password"placeholder="Enter Password" name="password" >
+
+   
+    <label for="favouriteTeam" ><b>Favourite Team</b></label>
+    <input type="text" id="password"placeholder="Enter Favourite Team" name="favouriteTeam" >
+
+    {{#if errorMessage}}
+        <div class="error-message">{{errorMessage}}</div>
+    {{/if}}
+
+    <button type="submit" class="registerbtn">Register</button>
+</form>
+</div>

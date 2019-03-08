@@ -1,0 +1,23 @@
+<div class="content">
+
+<h1 class="title">{{title}}</h1>
+
+
+<div class="articles">
+    
+{{#each article}}
+        <div class="eachArticle">
+            <a href="{{url}}" target="_blank">
+            <div class="articleImg">
+                <img src="{{urlToImage}}" alt="img not found">
+            </div>
+            <p>{{description}}</p>
+            </a>
+        </div>
+    
+{{/each}}
+</div>
+    
+    
+    
+</div>

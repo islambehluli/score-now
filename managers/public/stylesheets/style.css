@@ -1,0 +1,201 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:black;
+  position: relative;
+  min-height: 100%;
+}
+
+.content {
+  min-height: calc(100vh - 120px);
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+}
+
+body::after {
+  background: url(../images/back.jpg);
+  background-size: cover;
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;  
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: 50% 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.topnav {
+
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.parent{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.title{
+  text-align: center;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  
+}
+.title2{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+.matches{
+    text-align: center;
+}
+.articles{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.eachArticle{
+  width: 40%;
+  padding-top: 10px;
+}
+.articleImg{
+  width:100%;
+}
+.articleImg img{
+  width: 100%;
+}
+.table{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+.position{
+  margin-right: 20px;
+}
+.gameDay{
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.standings{
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.575);
+  height: 85vh;
+  margin-left: 3%;
+  padding: 20px;
+  overflow: scroll;
+  margin-bottom: 50px;
+}
+.topScorers{
+  background-color: rgba(255, 255, 255, 0.575);
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  height: 85vh;
+  overflow: scroll;
+  
+}
+.goals{
+  display: flex;
+  justify-content: space-between;
+}
+.nextMatches{
+  background-color: rgba(255, 255, 255, 0.575);
+  padding: 20px;
+  margin-right: 3%;
+  height: 85vh;
+  overflow: scroll;
+}
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+.signInback{
+  background-size: 100%;
+}
+.box{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: antiquewhite;
+  width: 40%;
+  height: 80vh;
+  justify-content: center;
+  margin-left: 30%;
+  margin-top: 5%
+}
